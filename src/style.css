@@ -50,7 +50,7 @@ img {
 .logo {
   width: 80px;
   height: 80px;
-  background: #ffd700 url("/images/stonebrookLogo.png") center/contain no-repeat;
+  background: #ffffff url("/images/stonebrookLogo.png") center/contain no-repeat;
   border-radius: 12px;
 }
 

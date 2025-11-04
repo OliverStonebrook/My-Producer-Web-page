@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/music-producer-site/static/css/main.1c50b30e.css",
-    "main.js": "/music-producer-site/static/js/main.1726f1c2.js",
-    "static/js/453.f7ab2503.chunk.js": "/music-producer-site/static/js/453.f7ab2503.chunk.js",
-    "static/media/img1.JPG": "/music-producer-site/static/media/img1.e1751b4791db1af0fb84.JPG",
-    "static/media/stonebrookLogo.png": "/music-producer-site/static/media/stonebrookLogo.f6f075beccb37b6ace86.png",
-    "static/media/mittett_img.jpg": "/music-producer-site/static/media/mittett_img.19fd68b1d15d8699ef6e.jpg",
-    "index.html": "/music-producer-site/index.html",
-    "main.1c50b30e.css.map": "/music-producer-site/static/css/main.1c50b30e.css.map",
-    "main.1726f1c2.js.map": "/music-producer-site/static/js/main.1726f1c2.js.map",
-    "453.f7ab2503.chunk.js.map": "/music-producer-site/static/js/453.f7ab2503.chunk.js.map"
+    "main.css": "/My-Producer-Web-page/static/css/main.1f25ed95.css",
+    "main.js": "/My-Producer-Web-page/static/js/main.3527ee7a.js",
+    "static/js/453.f7ab2503.chunk.js": "/My-Producer-Web-page/static/js/453.f7ab2503.chunk.js",
+    "static/media/img1.JPG": "/My-Producer-Web-page/static/media/img1.e1751b4791db1af0fb84.JPG",
+    "static/media/stonebrookLogo.png": "/My-Producer-Web-page/static/media/stonebrookLogo.f6f075beccb37b6ace86.png",
+    "static/media/mittett_img.jpg": "/My-Producer-Web-page/static/media/mittett_img.19fd68b1d15d8699ef6e.jpg",
+    "index.html": "/My-Producer-Web-page/index.html",
+    "main.1f25ed95.css.map": "/My-Producer-Web-page/static/css/main.1f25ed95.css.map",
+    "main.3527ee7a.js.map": "/My-Producer-Web-page/static/js/main.3527ee7a.js.map",
+    "453.f7ab2503.chunk.js.map": "/My-Producer-Web-page/static/js/453.f7ab2503.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c50b30e.css",
-    "static/js/main.1726f1c2.js"
+    "static/css/main.1f25ed95.css",
+    "static/js/main.3527ee7a.js"
   ]
 }

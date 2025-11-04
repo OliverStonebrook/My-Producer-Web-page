@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/music-producer-site/static/css/main.1c50b30e.css",
+    "main.js": "/music-producer-site/static/js/main.1726f1c2.js",
+    "static/js/453.f7ab2503.chunk.js": "/music-producer-site/static/js/453.f7ab2503.chunk.js",
+    "static/media/img1.JPG": "/music-producer-site/static/media/img1.e1751b4791db1af0fb84.JPG",
+    "static/media/stonebrookLogo.png": "/music-producer-site/static/media/stonebrookLogo.f6f075beccb37b6ace86.png",
+    "static/media/mittett_img.jpg": "/music-producer-site/static/media/mittett_img.19fd68b1d15d8699ef6e.jpg",
+    "index.html": "/music-producer-site/index.html",
+    "main.1c50b30e.css.map": "/music-producer-site/static/css/main.1c50b30e.css.map",
+    "main.1726f1c2.js.map": "/music-producer-site/static/js/main.1726f1c2.js.map",
+    "453.f7ab2503.chunk.js.map": "/music-producer-site/static/js/453.f7ab2503.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c50b30e.css",
+    "static/js/main.1726f1c2.js"
+  ]
+}

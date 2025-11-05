@@ -465,9 +465,7 @@ form button:hover {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-/* ===== NAVBAR MOBILE BEHAVIOR ===== */
-/* ===== MOBILE HEADER LAYOUT FIX ===== */
-/* ===== MOBILE STYLE IMPROVEMENTS ===== */
+/* ===== MOBILE STYLE IMPROVEMENTS változtatás===== */
 @media (max-width: 768px) {
 
   body {

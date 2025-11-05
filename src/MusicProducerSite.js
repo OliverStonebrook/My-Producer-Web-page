@@ -108,7 +108,7 @@ export default function MusicProducerSite() {
                   onClick={() => setLang("en")}
                   aria-label="English"
                 >
-                  <img src="/images/english.png" alt="English" />
+                  <img src={`${process.env.PUBLIC_URL}/images/english.png`} alt="English" />
                 </button>
 
                 <button
@@ -116,7 +116,7 @@ export default function MusicProducerSite() {
                   onClick={() => setLang("hu")}
                   aria-label="Hungarian"
                 >
-                  <img src="/images/hun.png" alt="Hungarian" />
+                  <img src={`${process.env.PUBLIC_URL}/images/hun.png`} alt="Hungarian" />
                 </button>
               </div>
             </nav>

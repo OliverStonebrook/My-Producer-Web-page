@@ -65,6 +65,18 @@ img {
 }
 
 /* ===== NAVIGATION ===== */
+.right-side {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* térköz a nav, lang-switcher és hamburger között */
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .nav a {
   position: relative;
   color: #fff;
@@ -126,8 +138,8 @@ img {
 }
 
 .lang-switcher button {
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: 1px solid #555;
   background: #1a1a1a;
@@ -465,123 +477,93 @@ form button:hover {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-/* ===== MOBILE STYLE IMPROVEMENTS változtatás===== */
+/* ===== NAVBAR MOBILE BEHAVIOR ===== */
+/* ===== MOBILE HEADER LAYOUT FIX ===== */
 @media (max-width: 768px) {
-
-  body {
-    font-size: 1rem;
-    line-height: 1.7;
-  }
-
+  
   .header-content {
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    padding: 0.8rem 1rem;
+    justify-content: space-between;
+    position: relative; /* a nav absolute pozicionálásához kell */
   }
 
-  .logo {
-    width: 60px;
-    height: 60px;
+  /* A logó és szöveg egy sorban maradjon */
+  .logo-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
   }
 
-  .logo-title h1 {
-    font-size: 1rem;
-  }
-
-  .logo-title p {
-    font-size: 0.8rem;
-    color: #aaa;
-  }
-
+  /* A hamburger menü gomb legyen jobbra */
   .menu-toggle {
     display: flex;
+    order: 2;
     margin-left: auto;
+    margin-right: 1rem;
   }
 
-  .hero {
+  /* A lenyíló nav továbbra is a teljes szélességet foglalja el */
+  .nav {
+    display: none;
     flex-direction: column;
-    text-align: center;
-    padding: 3rem 1.2rem;
-    background-position: center;
-    background-size: cover;
-  }
-
-  .hero-text h2 {
-    font-size: 1.8rem;
-    line-height: 1.3;
-  }
-
-  .hero-text p {
-    font-size: 1rem;
-    color: #ddd;
-    margin-bottom: 1.8rem;
-  }
-
-  .hero-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-    align-items: center;
-  }
-
-  .hero-buttons a {
-    width: 80%;
-    text-align: center;
-    padding: 0.8rem 1rem;
-    font-size: 1rem;
-  }
-
-  .studio-card {
+    align-items: center; /* középre igazítás vízszintesen */
+    justify-content: center;
+    width: 100%;
     background: #1a1a1a;
-    padding: 1rem;
-    border-radius: 12px;
-    text-align: left;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 1rem 0 1.5rem;
+    border-top: 1px solid #333;
+    border-radius: 0 0 12px 12px;
+    z-index: 15;
+    animation: slideDown 0.3s ease forwards;
   }
 
-  .studio-info {
-    flex-direction: column;
-    align-items: center;
+  .nav.active {
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  animation: slideDown 0.3s ease forwards;
+  }
+
+  .nav a {
+    display: block;
+    padding: 0.8rem 0;
     text-align: center;
-  }
-
-  .freshTrackLogo {
     width: 100%;
-    height: 200px;
-    border-radius: 12px;
+    font-size: 1.1rem;
+    color: #fff;
+    transition: background 0.2s, color 0.2s;
   }
-
-  .featured-track audio {
-    width: 100%;
+  .nav a:hover {
+    background: rgba(255, 215, 0, 0.1);
+    color: #ffd700;
   }
-
-  .track-timestamp {
-    display: inline-block;
-    font-size: 0.9rem;
-  }
-
-  .about-cards,
-  .services-grid,
-  .portfolio-grid,
-  .contact-grid {
-    flex-direction: column;
+  .lang-switcher {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    gap: 1.5rem;
+    margin-top: 0.01rem;
+    margin-bottom: 0.01rem; /* <<< EZ TARTJA TÁVOL A PRESS KIT-TŐL */
+  }
+  
+  .lang-switcher img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: transform 0.2s;
+    object-fit: cover;
   }
 
-  .card,
-  .service-card,
-  .portfolio-item,
-  form,
-  .contact-info {
-    width: 95%;
-  }
-
-  .footer {
-    font-size: 0.85rem;
-    padding: 1.2rem 0.5rem;
+  .nav:not(.active) ~ .lang-switcher {
+    display: none;
   }
 }
-
 
 /* Kis animáció, amikor lenyílik a menü */
 @keyframes slideDown {

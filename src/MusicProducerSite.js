@@ -96,37 +96,39 @@ export default function MusicProducerSite() {
               <a
                 href="/press-kit.zip"
                 className="press-kit"
-                onClick={() => setMenuOpen(false)}
-              >
+                onClick={() => setMenuOpen(false)}>
                 {t("pressKit")}
               </a>
+       
 
-              {/* LANGUAGE SWITCHER */}
-              <div className="lang-switcher">
-                <button
-                  className={lang === "en" ? "active" : ""}
-                  onClick={() => setLang("en")}
-                  aria-label="English"
-                >
-                  <img src={`${process.env.PUBLIC_URL}/images/english.png`} alt="English" />
-                </button>
+            {/* LANGUAGE SWITCHER */}
+            <div className="lang-switcher">
+              <button
+                className={lang === "en" ? "active" : ""}
+                onClick={() => setLang("en")}
+                aria-label="English">
+                <img
+                  src={`${process.env.PUBLIC_URL}/images/english.png`}
+                  alt="English"
+                />
+              </button>
 
-                <button
-                  className={lang === "hu" ? "active" : ""}
-                  onClick={() => setLang("hu")}
-                  aria-label="Hungarian"
-                >
-                  <img src={`${process.env.PUBLIC_URL}/images/hun.png`} alt="Hungarian" />
-                </button>
-              </div>
+              <button
+                className={lang === "hu" ? "active" : ""}
+                onClick={() => setLang("hu")}
+                aria-label="Hungarian">
+                <img
+                  src={`${process.env.PUBLIC_URL}/images/hun.png`}
+                  alt="Hungarian"
+                />
+              </button>
+            </div>
             </nav>
-
             {/* HAMBURGER BUTTON */}
             <button
               className={`menu-toggle ${menuOpen ? "open" : ""}`}
               onClick={() => setMenuOpen(!menuOpen)}
-              aria-label="Toggle menu"
-            >
+              aria-label="Toggle menu">
               <span></span>
               <span></span>
               <span></span>
@@ -188,15 +190,13 @@ export default function MusicProducerSite() {
                 <div
                   className="track-timestamp"
                   onClick={() => handleJumpTo(150)}
-                  style={{ cursor: "pointer" }}
-                >
+                  style={{ cursor: "pointer" }}>
                   🎸 Guitar solo — 2:30
                 </div>
                 <div
                   className="track-timestamp"
                   onClick={() => handleJumpTo(200)}
-                  style={{ cursor: "pointer" }}
-                >
+                  style={{ cursor: "pointer" }}>
                   🎸 Guitar solo — 3:20
                 </div>
               </div>
@@ -257,8 +257,7 @@ export default function MusicProducerSite() {
                     title={track.title}
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+                    allowFullScreen></iframe>
                 </div>
                 <h4>{track.title}</h4>
                 <p>{track.description}</p>
@@ -276,8 +275,7 @@ export default function MusicProducerSite() {
               onSubmit={(e) => {
                 e.preventDefault();
                 alert("Form submitted — replace with your handler");
-              }}
-            >
+              }}>
               <label>Name</label>
               <input placeholder="Your name" required />
               <label>Email</label>

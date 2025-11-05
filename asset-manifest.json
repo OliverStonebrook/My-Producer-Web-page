@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/My-Producer-Web-page/static/css/main.3fcdd472.css",
+    "main.css": "/My-Producer-Web-page/static/css/main.acb54821.css",
     "main.js": "/My-Producer-Web-page/static/js/main.e848ac94.js",
     "static/js/453.f7ab2503.chunk.js": "/My-Producer-Web-page/static/js/453.f7ab2503.chunk.js",
     "static/media/img1.JPG": "/My-Producer-Web-page/static/media/img1.e1751b4791db1af0fb84.JPG",
     "static/media/stonebrookLogo.png": "/My-Producer-Web-page/static/media/stonebrookLogo.f6f075beccb37b6ace86.png",
     "static/media/mittett_img.jpg": "/My-Producer-Web-page/static/media/mittett_img.19fd68b1d15d8699ef6e.jpg",
     "index.html": "/My-Producer-Web-page/index.html",
-    "main.3fcdd472.css.map": "/My-Producer-Web-page/static/css/main.3fcdd472.css.map",
+    "main.acb54821.css.map": "/My-Producer-Web-page/static/css/main.acb54821.css.map",
     "main.e848ac94.js.map": "/My-Producer-Web-page/static/js/main.e848ac94.js.map",
     "453.f7ab2503.chunk.js.map": "/My-Producer-Web-page/static/js/453.f7ab2503.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3fcdd472.css",
+    "static/css/main.acb54821.css",
     "static/js/main.e848ac94.js"
   ]
 }
